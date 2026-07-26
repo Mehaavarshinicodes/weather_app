@@ -1,4 +1,16 @@
 {% extends "base.html" %}
 {% block body %}
-<p>{{data}}</p>
+<h2>Weather @ {{city_name}}</h2>
+<p>{{weather_description}}</p>
+<hr>
+<p>Current Temperature: {{temp}} K</p>
+<p>Feel's like: {{feels_like}} K</p>
+<hr>
+<p>Minimum Temperature: {{temp_min}} K</p>
+<p>Maximum Temperature: {{temp_max}} K</p>
+<hr>
+<p>Wind Info</p>
+<p>Pressure: {{pressure}}</p>
+<p>Humidity: {{humidity}}</p>
+
 {% endblock %}
